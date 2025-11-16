@@ -1,49 +1,49 @@
-USPS Handwritten Digit Recognition Project
+## USPS Handwritten Digit Recognition Project
 
 This project aims to perform handwritten digit recognition using the USPS dataset and explore and compare the performance of various algorithms (from basic mathematical statistical methods to deep learning models). In addition, the project includes preprocessing and prediction validation for self-made handwritten images (real-world applications).
 
-📋 Project Overview
+## Project Overview
 
 This notebook implements the complete workflow from data download, preprocessing, model building to final evaluation. The main goal is to recognize 16x16 pixel grayscale handwritten digit images. In addition to using the standard test set, self-made handwritten digit images (handwrite/dr and handwrite/mine) are specifically included to test the model's generalization ability on real-world data.
 
-🛠️ Techniques and Models Used
+## Techniques and Models Used
 
 This project implements and compares the following six methods:
 
-Mean Template (2-Norm):
+1. Mean Template (2-Norm):
 
 Calculates the average image of each digit in the training set.
 
 **Euclidean Distance (L2 Norm):** Classifies test samples to the nearest mean template.
 
-**Singular Value Decomposition (SVD):**
+2. Singular Value Decomposition (SVD):**
 
 Creates an SVD subspace for each digit category.
 
 Calculates the projection residuals of the test image in each subspace for classification.
 
-**Higher-Order Singular Value Decomposition (HOSVD):**
+3. Higher-Order Singular Value Decomposition (HOSVD):**
 
 Applies tensor decomposition techniques for feature extraction and classification.
 
-**Random Forest:**
+4. Random Forest:**
 
 Uses ensemble learning methods from sklearn for classification.
 
-**XGBoost:**
+5. XGBoost:**
 
 Uses gradient boosting for efficient classification.
 
-**SVM - Support Vector Machine(SVM):**
+6 SVM - Support Vector Machine(SVM):**
 Uses sklearn.svm.SVC for classification.
 
 Suitable for classification problems in high-dimensional feature spaces.
 
-**Convolutional Neural Network (CNN):**
+7. Convolutional Neural Network (CNN):**
 
 Constructs a deep learning model using TensorFlow/Keras, including convolutional layers, pooling layers, and fully connected layers.
 
-📦 Dataset
+## Dataset
 
 Main data source: Kaggle (USPS Dataset)
 
@@ -51,13 +51,13 @@ Image specifications: 16x16 pixels, grayscale.
 
 Includes train (training set) and test (test set).
 
-Custom test data:
+## Custom test data:
 
 handwrite/dr: Additional collected images of handwritten digits.
 
 handwrite/mine: Images of your own handwritten digits.
 
-⚙️ Environment Requirements
+## Environment Requirements
 
 Project execution requires the following Python packages:
 
@@ -79,7 +79,7 @@ SciPy, h5py
 
 Kaggle API (for downloading data)
 
-🚀 Project Flow
+## Project Flow
 
 Data preparation:
 
@@ -107,7 +107,7 @@ Visualize the residual distribution of SVD/HOSVD.
 
 Demonstrate the effect of custom handwritten images at each preprocessing stage (original image -> invert -> mask -> ROI -> scaling -> thickening).
 
-📊 Experimental Results
+## Experimental Results
 
 The Notebook includes detailed data analysis, including:
 
