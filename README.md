@@ -115,3 +115,6 @@ This project implements and compares the following six methods:
     Analysis of easily confused numbers (e.g., 4 and 9, 1 and 7).
     
     Comparison of recognition results for custom handwritten images under different models (e.g., the difference in performance between CNN and SVD on real handwritten characters).
+
+<img width="721" height="388" alt="results" src="https://github.com/user-attachments/assets/d1f60123-ca75-4cd8-b9b1-e66e749e7d61" />
+
