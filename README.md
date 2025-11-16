@@ -1,7 +1,6 @@
 ## USPS Handwritten Digit Recognition Project
 
-This project aims to perform handwritten digit recognition using the USPS dataset and explore and compare the performance of various algorithms (from basic mathematical statistical methods to deep learning models). In addition, the project includes preprocessing and prediction validation for self-made handwritten images (real-world applications).
-
+This is the HW2 in the NCHU_Mathematical Analysis to Data Science project. The project aims to utilize the United States Postal Service (USPS) dataset for handwritten digit recognition and to explore and compare the performance of various algorithms, ranging from basic mathematical statistics methods to deep learning models. Furthermore, this project includes preprocessing and predictive validation of self-made handwritten images (for practical applications).
 ## Project Overview
 
 This notebook implements the complete workflow from data download, preprocessing, model building to final evaluation. The main goal is to recognize 16x16 pixel grayscale handwritten digit images. In addition to using the standard test set, self-made handwritten digit images (handwrite/dr and handwrite/mine) are specifically included to test the model's generalization ability on real-world data.
